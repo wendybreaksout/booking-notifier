@@ -41,7 +41,7 @@ class Booking_Notifier_Manager {
     $bookings_obj = new Booking_Notifier_Bookings();
     $date_today = date("M d, Y");
     // TODO locallize
-    $message_content = '<h2>Reserved Today, ' .$date_today . '</h2>';
+    $message_content = '<h2>Reserved Today, ' . $date_today . '</h2>';
 
     // get current (today's) bookings. 
     $current_bookings = $bookings_obj->get_current_bookings();
